@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <div class="catalog-container">
+        <div class="product">
+            <div class="product-container" style="background-image: url('iphone.png');">
+                <img src="iphone.png" alt="iPhone" class="product-image">
+                <h3 class="product-name">iPhone 13</h3>
+                <p class="product-description">The latest iPhone with advanced features and powerful performance.</p>
+                <p class="product-price">$999</p>
+                <button class="add-to-cart-btn" onclick="addToCart('iPhone 13', 999)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-container" style="background-image: url('samsung.png');">
+                <img src="samsung.png" alt="Samsung Galaxy" class="product-image">
+                <h3 class="product-name">Samsung Galaxy S21</h3>
+                <p class="product-description">A flagship Android smartphone with a stunning display and excellent camera.</p>
+                <p class="product-price">$899</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Samsung Galaxy S21', 899)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-container" style="background-image: url('oneplus.png');">
+                <img src="oneplus.png" alt="OnePlus" class="product-image">
+                <h3 class="product-name">OnePlus 9 Pro</h3>
+                <p class="product-description">Powerful performance and a versatile camera setup characterize this flagship phone.</p>
+                <p class="product-price">$899</p>
+                <button class="add-to-cart-btn" onclick="addToCart('OnePlus 9 Pro', 899)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
